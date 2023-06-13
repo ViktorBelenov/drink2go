@@ -2,6 +2,16 @@
   margin-left: 20px;
 
   display: flex;
+
+  position: relative;
+}
+
+.header-navigation--closed .header-navigation__list-first {
+  display: none;
+}
+
+.header-navigation--no-js .header-navigation__burger {
+  display: none;
 }
 
 .header-navigation__logo {
@@ -12,7 +22,19 @@
 .header-navigation__list-first {
   margin: 0;
   padding: 0;
-  display: none;
+  list-style: none;
+
+  position: absolute;
+  right: 20px;
+  top: 60px;
+  width: 94%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-navigation__list-first-item {
+  margin: 0 auto;
 }
 
 .header-navigation__list-second {
