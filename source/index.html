@@ -7,7 +7,49 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="header">Шапка</header>
+    <header class="header">
+      <nav class="header-navigation">
+        <a class="header-navigation__logo">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo/mobile-logo.svg">
+            <source media="(min-width: 768px)" srcset="img/logo/mobile-logo.svg">
+            <img class="header-navigation__logo-img" src="img/logo/mobile-logo.svg" width="32" height="36" alt="Логотип магазина Drink2Go">
+          </picture>
+        </a>
+        <ul class="header-navigation__list-first nav-list">
+          <li class ='nav-list__item'>Главная</li>
+          <li class ='nav-list__item'>Каталог</li>
+          <li class ='nav-list__item'>Доставка</li>
+          <li class ='nav-list__item'>О нас</li>
+        </ul>
+        <ul class="header-navigation__list-second">
+          <li class="header-navigation__list-second-item">
+            <a class="header-navigation__list-second-link" href="#">
+              <svg class="header-navigation__list-second-link-picture" width="16" height="16">
+                <use xlink:href="img/icons/stack.svg#user"></use>
+              </svg>
+
+              <span class="header-navigation__list-second-link-text">Войти</span>
+              </a>
+          </li>
+          <li class="header-navigation__list-second-item">
+            <a class="header-navigation__list-second-link" href="#">
+              <svg class="header-navigation__list-second-link-picture" width="16" height="16">
+                <use xlink:href="img/icons/stack.svg#basket"></use>
+              </svg>
+
+              <span class="header-navigation__list-second-link-text">Корзина</span>
+              </a>
+          </li>
+        </ul>
+        <button class="header-navigation__burger">
+          <svg class="header-navigation__burger-icon" width="16" height="16">
+            <use xlink:href="img/icons/stack.svg#burger"></use>
+          </svg>
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </nav>
+    </header>
 
     <script src="./js/script.js" defer></script>
   </body>
