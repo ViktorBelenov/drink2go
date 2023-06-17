@@ -54,38 +54,51 @@
       </nav>
     </header>
     <main>
+      <h1 class="visually-hidden">Магазин drink2go</h1>
       <section>
         <div class="swiper">
+          <h2 class="visually-hidden">Слайдер с новинками кофе</h2>
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class ="slide">
+                <div class="slide__text-container">
+                  <span class="slide__clickbait">Новинка!</span>
+                  <h3 class="slide__header">Декаф Флэт Уайт</h3>
+                  <p class="slide__description"> Свежесваренный кофе без кофеина из Эфиопии
+                    с натуральным фермерским молоком — то, что нужно
+                    для расслабления после тяжёлого рабочего дня
+                  </p>
+
+                  <p class="slide__price-and-button-container">
+                    <span class="price price--not-relevant">295₽</span>
+                    <span class="price">225₽</span>
+                    <button>Заказать</button>
+                  </p>
+                </div>
+                <picture class="slide__img">
+                  <source type="image/webp" srcset="img/slider/flat_white_mobile.webp 1x, img/slider/flat_white_mobile@2x.webp 2x">
+                  <img class="slide__img" src="img/slider/flat_white_mobile.jpg" srcset="img/slider/flat_white_mobile@2x.jpg 2x" alt="Напиток Декаф Флэт Уайт" width="280" height="280">
+                </picture>
+              </div>
+            </div>
             <div class="swiper-slide">Slide 2</div>
             <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
+            ...
           </div>
+          <!-- If we need pagination -->
+          <!-- <div class="swiper-pagination"></div> -->
 
           <!-- If we need navigation buttons -->
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
 
+          <!-- If we need scrollbar -->
+          <!-- <div class="swiper-scrollbar"></div> -->
         </div>
       </section>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./js/main.js" type="module"  defer></script>
-    <script>
-      var swiper = new Swiper(".swiper", {
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
-
   </body>
 </html>

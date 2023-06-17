@@ -1,10 +1,13 @@
 @base-white:rgb(255,255,255);
 @base-secondary:rgb(240, 235, 255);
+@base-primary:rgb(120,89,207);
+@base-black:rgb(51,51,51);
 /* здесь используйте глобальные переменные */
 @mobile:320px;
 @tablet:768px;
 @desktop:1440px;
 
+/* font-family: "Montserrat", "Arial", sans-serif; */
 
 .visually-hidden {
   position: absolute;
@@ -15,4 +18,12 @@
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.wrapper () {
+  margin: 0 20px;
+
+  @media (min-width: @desktop) {
+    margin: 0 40px;
+  }
 }

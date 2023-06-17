@@ -1,0 +1,48 @@
+.slide {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+  align-items: center;
+  text-align: center;
+
+  color: @base-black;
+
+  @media (min-width: @desktop) {
+    margin: 0 40px;
+  }
+}
+
+.slide__header {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+}
+
+.slide__clickbait {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  color: @base-primary;
+
+  text-transform: uppercase;
+}
+
+.slide__description {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.slide__text-container {
+  order: 2;
+}
+
+.slide__img {
+  order: 1;
+}
