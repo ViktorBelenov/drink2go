@@ -1,0 +1,44 @@
+.swiper__button {
+  z-index: 10;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 20px;
+}
+
+.swiper__button--next {
+  right: 0;
+
+  &::after {
+    content: "";
+    width: 11px;
+    height: 20px;
+    background-image: url("../../img/slider/slider-right.svg");
+    position: absolute;
+    top: 50%;
+    right: 4px;
+  }
+
+  &:active {
+    background: linear-gradient(-90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+  }
+}
+
+.swiper__button--prev {
+  left: 0;
+
+  &::after {
+    content: "";
+    width: 11px;
+    height: 20px;
+    background-image: url("../../img/slider/slider-left.svg");
+    position: absolute;
+    top: 50%;
+    left: 4px;
+  }
+
+  &:active {
+    background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+  }
+}
