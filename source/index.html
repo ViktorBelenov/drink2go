@@ -20,10 +20,18 @@
             кофейных напитков</span>
         </a>
         <ul class="header-navigation__list-first nav-list">
-          <li class ='header-navigation__list-first-item nav-list__item'>Главная</li>
-          <li class ='header-navigation__list-first-item nav-list__item'>Каталог</li>
-          <li class ='header-navigation__list-first-item nav-list__item'>Доставка</li>
-          <li class ='header-navigation__list-first-item nav-list__item'>О нас</li>
+          <li class ='header-navigation__list-first-item nav-list__item'>
+            <a class="header-navigation__list-first-link">Главная</a>
+          </li>
+          <li class ='header-navigation__list-first-item nav-list__item'>
+            <a class="header-navigation__list-first-link">Каталог</a>
+          </li>
+          <li class ='header-navigation__list-first-item nav-list__item'>
+            <a class="header-navigation__list-first-link">Доставка</a>
+          </li>
+          <li class ='header-navigation__list-first-item nav-list__item'>
+            <a class="header-navigation__list-first-link">О нас</a>
+          </li>
         </ul>
         <ul class="header-navigation__list-second">
           <li class="header-navigation__list-second-item">
@@ -87,9 +95,54 @@
                 </picture>
               </div>
             </div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">
+              <div class ="slide slide--lavender">
+                <div class="slide__text-container">
+                  <span class="slide__clickbait">Новинка!</span>
+                  <h3 class="slide__header">Лавандовый Латте</h3>
+                  <p class="slide__description"> Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор
+                  </p>
+
+                  <p class="slide__price-and-button-container">
+                    <span class="price price--not-relevant slide__price-not-relevant">285₽</span>
+                    <span class="price slide__price">265₽</span>
+                    <a class="main-button slide__button">Заказать</a>
+                  </p>
+                </div>
+                <picture class="slide__img">
+                  <source media="(min-width: 1440px)" type="image/webp" srcset="img/slider/lavender_img_desktop.webp 1x, img/slider/lavender_img_desktop@2x.webp 2x">
+                  <source media="(min-width: 768px)" type="image/webp" srcset="img/slider/lavender_img_tablet.webp 1x, img/slider/lavender_img_tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/slider/lavender_img_mobile.webp 1x, img/slider/lavender_img_mobile@2x.webp 2x">
+                  <source media="(min-width: 1440px)" srcset="img/slider/lavender_img_desktop.png 1x, img/slider/lavender_img_desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/slider/lavender_img_tablet.png 1x, img/slider/lavender_img_tablet@2x.png 2x">
+                  <img class="slide__img" src="img/slider/lavender_img_mobile.png" srcset="img/slider/lavender_img_mobile@2x.png 2x" alt="Напиток Декаф Флэт Уайт" width="280" height="280">
+                </picture>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class ="slide slide--espresso">
+                <div class="slide__text-container">
+                  <span class="slide__clickbait">Новинка!</span>
+                  <h3 class="slide__header">Тройной Эспрессо</h3>
+                  <p class="slide__description"> Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость
+                  </p>
+
+                  <p class="slide__price-and-button-container">
+                    <span class="price price--not-relevant slide__price-not-relevant">395₽</span>
+                    <span class="price slide__price">375₽</span>
+                    <a class="main-button slide__button">Заказать</a>
+                  </p>
+                </div>
+                <picture class="slide__img">
+                  <source media="(min-width: 1440px)" type="image/webp" srcset="img/slider/espresso_img_desktop.webp 1x, img/slider/espresso_img_desktop@2x.webp 2x">
+                  <source media="(min-width: 768px)" type="image/webp" srcset="img/slider/espresso_img_tablet.webp 1x, img/slider/espresso_img_tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/slider/espresso_img_mobile.webp 1x, img/slider/espresso_img_mobile@2x.webp 2x">
+                  <source media="(min-width: 1440px)" srcset="img/slider/espresso_img_desktop.png 1x, img/slider/espresso_img_desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/slider/espresso_img_tablet.png 1x, img/slider/espresso_img_tablet@2x.png 2x">
+                  <img class="slide__img" src="img/slider/espresso_img_mobile.png" srcset="img/slider/espresso_img_mobile@2x.png 2x" alt="Напиток Декаф Флэт Уайт" width="280" height="280">
+                </picture>
+              </div>
+            </div>
           </div>
           <!-- If we need pagination -->
           <div class="swiper-pagination"></div>
