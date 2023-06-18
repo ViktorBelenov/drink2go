@@ -1,0 +1,36 @@
+
+.slider {
+  background-color: @flat-white;
+
+  @media (min-width: @tablet) {
+    background: linear-gradient(@flat-white 75%, @base-white 75%);
+  }
+
+  @media (min-width: @desktop) {
+    background: @flat-white;
+  }
+}
+
+.slider:has(.slider__slide--lavender.swiper-slide-active) {
+  background-color: @lavender-latte;
+
+  @media (min-width: @tablet) {
+    background: linear-gradient(@lavender-latte 75%, @base-white 75%);
+  }
+
+  @media (min-width: @desktop) {
+    background: @lavender-latte;
+  }
+}
+
+.slider :has(.slider__slide--espresso.swiper-slide-active) {
+  background-color: @espresso;
+
+  @media (min-width: @tablet) {
+    background: linear-gradient(@espresso 75%, @base-white 75%);
+  }
+
+  @media (min-width: @desktop) {
+    background: @espresso;
+  }
+}

@@ -67,7 +67,7 @@
         <div class="swiper">
           <h2 class="visually-hidden">Слайдер с новинками кофе</h2>
           <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
+          <div class="swiper-wrapper slider">
             <!-- Slides -->
             <div class="swiper-slide">
               <div class ="slide">
@@ -95,8 +95,8 @@
                 </picture>
               </div>
             </div>
-            <div class="swiper-slide">
-              <div class ="slide slide--lavender">
+            <div class="swiper-slide slider__slide slider__slide--lavender">
+              <div class ="slide">
                 <div class="slide__text-container">
                   <span class="slide__clickbait">Новинка!</span>
                   <h3 class="slide__header">Лавандовый Латте</h3>
@@ -119,8 +119,8 @@
                 </picture>
               </div>
             </div>
-            <div class="swiper-slide">
-              <div class ="slide slide--espresso">
+            <div class="swiper-slide slider__slide slider__slide--espresso">
+              <div class ="slide">
                 <div class="slide__text-container">
                   <span class="slide__clickbait">Новинка!</span>
                   <h3 class="slide__header">Тройной Эспрессо</h3>
@@ -151,9 +151,30 @@
           <div class="swiper__button swiper__button--next"></div>
           <div class="swiper__button swiper__button--prev"></div>
 
-          <!-- If we need scrollbar -->
-          <!-- <div class="swiper-scrollbar"></div> -->
         </div>
+      </section>
+      <section class="advantages">
+        <h2  class="advantages__title">Преимущества</h2>
+        <h2  class="advantages__title-second">Главные причины выбрать Drink2Go</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item advantages__item--spead">
+            <h3 class="advantages__item-heading">Скорость</h3>
+            <p class="advantages__item-description">Готовый напиток всегда под рукой — просто открой банку</p>
+          </li>
+          <li class="advantages__item advantages__item--facilities">
+            <h3 class="advantages__item-heading">Удобство</h3>
+            <p class="advantages__item-description">Легко помещается и в карман, и в маленькую сумочку</p>
+          </li>
+          <li class="advantages__item advantages__item--cheerfulness">
+            <h3 class="advantages__item-heading">Бодрость</h3>
+            <p class="advantages__item-description">Сбалансированная доза кофеина даст мощный заряд энергии</p>
+          </li>
+          <li class="advantages__item advantages__item--envifriendliness">
+            <h3 class="advantages__item-heading">Экологичность</h3>
+            <p class="advantages__item-description">Вся упаковка сделана из перерабатываемых материалов</p>
+          </li>
+        </ul>
+
       </section>
     </main>
     <script src="./js/main.js" type="module"  defer></script>
