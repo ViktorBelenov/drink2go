@@ -5,6 +5,10 @@
   top: 0;
   height: 100%;
   width: 20px;
+
+  @media (min-width: @tablet) {
+    width: 80px;
+  }
 }
 
 .swiper__button--next {
@@ -18,6 +22,10 @@
     position: absolute;
     top: 50%;
     right: 4px;
+
+    @media (min-width: @tablet) {
+      right: 34px;
+    }
   }
 
   &:active {
@@ -36,9 +44,34 @@
     position: absolute;
     top: 50%;
     left: 4px;
+
+    @media (min-width: @tablet) {
+      left: 34px;
+    }
   }
+
 
   &:active {
     background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
   }
+}
+
+.swiper-pagination {
+  display: none;
+
+  @media (min-width: @desktop) {
+    display: block;
+  }
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  width: 62px;
+  height: 4px;
+  border-radius: 0;
+  opacity: 1;
+  background: @base-white;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background: @base-primary;
 }

@@ -9,9 +9,15 @@
 
   color: @base-black;
 
+  @media (min-width: @tablet) {
+    padding-top: 60px;
+    margin: 0 80px;
+  }
 
   @media (min-width: @desktop) {
-    margin: 0 40px;
+    padding-top: 30px;
+    flex-direction: row;
+    text-align: start;
   }
 }
 
@@ -24,6 +30,12 @@
   line-height: 48px;
 
   margin-bottom: 10px;
+
+  @media (min-width: @tablet) {
+    font-size: 56px;
+    line-height: 80px;
+    margin-bottom: 16px;
+  }
 }
 
 .slide__clickbait {
@@ -48,6 +60,11 @@
   line-height: 20px;
 
   margin-bottom: 20px;
+
+  @media (min-width: @tablet) {
+    font-size: 20px;
+    line-height: 32px;
+  }
 }
 
 .slide__text-container {
@@ -57,6 +74,12 @@
 
   @media (min-width: @tablet) {
     order: 1;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: @desktop) {
+    order: 2;
+    align-items: flex-start;
   }
 }
 
@@ -67,6 +90,15 @@
 
   @media (min-width: @tablet) {
     order: 2;
+    width: 476px;
+    height: 476px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 600px;
+    height: 600px;
+
+    order: 1;
   }
 }
 
