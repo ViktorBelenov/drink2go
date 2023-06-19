@@ -182,7 +182,7 @@
             <form>
               <div class="catalog__settings-container">
                 <fieldset class="catalog__price">
-                  <h3 class="catalog__fieldset-title">Цена</h3>
+                  <h3 class="catalog__fieldset-title catalog__fieldset-title-price">Цена</h3>
                   <div class="catalog__price-range-line-container">
                     <div class="catalog__price-range-line">
                       <div class="catalog__price-range-line-actual">
@@ -198,7 +198,7 @@
                   <div class="catalog__price-range-input-container">
                     <label class="visually-hidden" for="catalog__price-range-input-max">Максимальная цена</label>
                     <label class="visually-hidden" for="catalog__price-range-input-min">Минимальная цена</label>
-                    <input type="number" class="catalog__price-range-input" name="min-price" id="catalog__price-range-input-min" value="0">
+                    <input type="number" class="catalog__price-range-input catalog__price-range-input--zero" name="min-price" id="catalog__price-range-input-min" value="0" >
                     <input type="number" class="catalog__price-range-input" name="max-price"
                     id="catalog__price-range-input-max" value="123">
                   </div>
@@ -217,42 +217,97 @@
                       <label class="radio__label">
                         <input class="radio__control-input visually-hidden" type="radio" name="milk" value="cow">
                         <span class="radio__control-mark"></span>
-                        <span class="radio__text">Неважно</span>
+                        <span class="radio__text">Только животное</span>
                       </label>
                     </li>
                     <li class="radio__item">
                       <label class="radio__label">
                         <input class="radio__control-input visually-hidden" type="radio" name="milk" value="penat">
                         <span class="radio__control-mark"></span>
-                        <span class="radio__text">Неважно</span>
+                        <span class="radio__text">Только растительное</span>
                       </label>
                     </li>
                     <li class="radio__item">
                       <label class="radio__label">
                         <input class="radio__control-input visually-hidden" type="radio" name="milk" value="no">
                         <span class="radio__control-mark"></span>
-                        <span class="radio__text">Неважно</span>
+                        <span class="radio__text">Без молока</span>
                       </label>
                     </li>
                   </ul>
                 </fieldset>
                 <fieldset class="catalog__country">
                   <h3 class="catalog__fieldset-title">Страна произрастания</h3>
-                  <ul class="catalog__country-checkbox-list checkbox">
+                  <ul class="checkbox">
                     <li class="checkbox__item">
                       <label class="checkbox__label">
-                        <input class="checkbox__control-input visually-hidden" type="radio" name="milk" value="no">
-                        <span class="checkbox__control-mark"></span>
-                        <span class="checkbox__text">Неважно</span>
+                          <input class="checkbox__input-control visually-hidden" type="checkbox" name="check">
+                          <span class="checkbox__control-mark"></span>
+                          <span class="checkbox__text">Бразилия</span>
+                      </label>
+                    </li>
+                    <li class="checkbox__item">
+                      <label class="checkbox__label">
+                          <input class="checkbox__input-control visually-hidden" type="checkbox" name="check">
+                          <span class="checkbox__control-mark"></span>
+                          <span class="checkbox__text">Эфиопия</span>
+                      </label>
+                    </li>
+                    <li class="checkbox__item">
+                      <label class="checkbox__label">
+                          <input class="checkbox__input-control visually-hidden" type="checkbox" name="check">
+                          <span class="checkbox__control-mark"></span>
+                          <span class="checkbox__text">Колумбия</span>
+                      </label>
+                    </li>
+                    <li class="checkbox__item">
+                      <label class="checkbox__label">
+                          <input class="checkbox__input-control visually-hidden" type="checkbox" name="check">
+                          <span class="checkbox__control-mark"></span>
+                          <span class="checkbox__text">Коста-Рика</span>
                       </label>
                     </li>
                   </ul>
-
                 </fieldset>
-                <button></button>
-                <button></button>
+                <div class="catalog__button-container">
+                  <button class="main-button catalog__button-use">Применить</button>
+                  <button class="main-button main-button--invert ">Сбросить</button>
+                </div>
               </div>
-
+              <div class="catalog__cards-select-container">
+                <div class="catalog__select-container">
+                  <label class="catalog__cards-select-label" for="sort">Сортировка:</label>
+                  <select class="catalog__cards-select select" id="sort">
+                    <option class="select__option">по умолчанию</option>
+                  </select>
+                </div>
+                <ul class="catalog__cards-list">
+                  <li class="card">
+                    <a class="card__img-link">
+                    <picture class="card__img">
+                      <source type="image/webp" srcset="img/catalog/coffee-can-1.webp 1x, img/catalog/coffee-can-1@2x.webp 2x">
+                      <img class="card__img" src="img/catalog/coffee-can-1.png" srcset="img/catalog/coffee-can-1@2x.png 2x" alt="Напиток Декаф Флэт Уайт" width="130" height="180">
+                    </picture>
+                    </a>
+                    <h3 class="card__title">Декаф Флэт Уайт</h3>
+                    <p class="card__describe">Кофе без кофеина из Эфиопии
+                      с натуральным фермерским молоком</p>
+                    <div class="card__price-cart-container">
+                      <span>225₽</span>
+                      <button class="main-button">В корзину</button>
+                    </div>
+                  </li>
+                </ul>
+                <div class="pagination">
+                  <ul class="pagination__list">
+                    <li class="pagination__item pagination__item--left"></li>
+                    <li class="pagination__item"></li>
+                    <li class="pagination__item"></li>
+                    <li class="pagination__item"></li>
+                    <li class="pagination__item pagination__item--right"></li>
+                  </ul>
+                </div>
+              </div>
             </form>
           </div>
       </section>
