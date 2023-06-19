@@ -1,0 +1,43 @@
+.radio {
+  list-style: none;
+  padding: 0;
+}
+
+
+.radio__label {
+  display: flex;
+  align-items: center;
+}
+
+.radio__control-mark {
+  box-sizing: border-box;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid @base-grey;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.radio__label:hover .radio__control-mark {
+  border: 2px solid @base-primary;
+}
+
+.radio__control-input:checked + .radio__control-mark {
+  border: 2px solid @base-primary;
+}
+
+.radio__control-input:checked + .radio__control-mark::before {
+  content: " ";
+  background-color: @base-primary;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+
+.radio__text {
+  margin-left: 10px;
+}

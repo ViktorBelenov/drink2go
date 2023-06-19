@@ -182,7 +182,7 @@
             <form>
               <div class="catalog__settings-container">
                 <fieldset class="catalog__price">
-                  <h3>Цена</h3>
+                  <h3 class="catalog__fieldset-title">Цена</h3>
                   <div class="catalog__price-range-line-container">
                     <div class="catalog__price-range-line">
                       <div class="catalog__price-range-line-actual">
@@ -204,12 +204,49 @@
                   </div>
                 </fieldset>
                 <fieldset class="catalog__milk">
-                  <h3>Наличие молока</h3>
-
-
+                  <h3 class="catalog__fieldset-title">Наличие молока</h3>
+                  <ul class="catalog__milk-radio-list radio">
+                    <li class="radio__item">
+                      <label class="radio__label">
+                        <input class="radio__control-input visually-hidden" type="radio" name="milk" value="not-mater" checked>
+                        <span class="radio__control-mark"></span>
+                        <span class="radio__text">Неважно</span>
+                      </label>
+                    </li>
+                    <li class="radio__item">
+                      <label class="radio__label">
+                        <input class="radio__control-input visually-hidden" type="radio" name="milk" value="cow">
+                        <span class="radio__control-mark"></span>
+                        <span class="radio__text">Неважно</span>
+                      </label>
+                    </li>
+                    <li class="radio__item">
+                      <label class="radio__label">
+                        <input class="radio__control-input visually-hidden" type="radio" name="milk" value="penat">
+                        <span class="radio__control-mark"></span>
+                        <span class="radio__text">Неважно</span>
+                      </label>
+                    </li>
+                    <li class="radio__item">
+                      <label class="radio__label">
+                        <input class="radio__control-input visually-hidden" type="radio" name="milk" value="no">
+                        <span class="radio__control-mark"></span>
+                        <span class="radio__text">Неважно</span>
+                      </label>
+                    </li>
+                  </ul>
                 </fieldset>
                 <fieldset class="catalog__country">
-                  <h3>Страна произрастания</h3>
+                  <h3 class="catalog__fieldset-title">Страна произрастания</h3>
+                  <ul class="catalog__country-checkbox-list checkbox">
+                    <li class="checkbox__item">
+                      <label class="checkbox__label">
+                        <input class="checkbox__control-input visually-hidden" type="radio" name="milk" value="no">
+                        <span class="checkbox__control-mark"></span>
+                        <span class="checkbox__text">Неважно</span>
+                      </label>
+                    </li>
+                  </ul>
 
                 </fieldset>
                 <button></button>
