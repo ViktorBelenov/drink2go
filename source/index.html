@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>Название проекта</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="header">
@@ -179,7 +179,7 @@
           <div class="catalog__wrapper">
             <h2 class="catalog__title clickbait">Каталог</h2>
             <h2 class="catalog__second-title">Каталог кофейных напитков</h2>
-            <form>
+            <form class="catalog__form">
               <div class="catalog__settings-container">
                 <fieldset class="catalog__price">
                   <h3 class="catalog__fieldset-title catalog__fieldset-title-price">Цена</h3>
@@ -380,11 +380,12 @@
                 </ul>
                 <div class="catalog__pagination pagination">
                   <ul class="pagination__list">
-                    <li class="pagination__item pagination__item--left">
-                      <a class="pagination__link">
+                    <li class="pagination__item">
+                      <a class="pagination__link pagination__link--left">
                         <svg class="pagination__icon" width="10" height="6">
                           <use xlink:href="img/icons/stack.svg#left-pagination"></use>
                         </svg>
+                        <span class="pagination__text">Назад</span>
                       </a>
                     </li>
                     <li class="pagination__item">
@@ -396,11 +397,12 @@
                     <li class="pagination__item">
                       <a class="pagination__link">3</a>
                     </li>
-                    <li class="pagination__item pagination__item--right">
-                      <a class="pagination__link">
+                    <li class="pagination__item">
+                      <a class="pagination__link pagination__link--right">
                         <svg class="pagination__icon" width="10" height="6">
                           <use xlink:href="img/icons/stack.svg#right-pagination"></use>
                         </svg>
+                        <span class="pagination__text">Вперед</span>
                       </a>
                     </li>
                   </ul>
