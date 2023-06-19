@@ -176,29 +176,48 @@
         </ul>
       </section>
       <section class="catalog">
-        <h2 class="catalog__title clickbait">Каталог</h2>
-        <h2 class="catalog__second-title">Каталог кофейных напитков</h2>
-        <form>
-          <div class="catalog__settings-container">
-            <fieldset class="catalog__price">
-              <h3>Цена</h3>
+          <div class="catalog__wrapper">
+            <h2 class="catalog__title clickbait">Каталог</h2>
+            <h2 class="catalog__second-title">Каталог кофейных напитков</h2>
+            <form>
+              <div class="catalog__settings-container">
+                <fieldset class="catalog__price">
+                  <h3>Цена</h3>
+                  <div class="catalog__price-range-line-container">
+                    <div class="catalog__price-range-line">
+                      <div class="catalog__price-range-line-actual">
+                        <button class="catalog__price-range-button catalog__price-range-button--left" type="button">
+
+                        </button>
+                        <button class="catalog__price-range-button catalog__price-range-button--right" type="button">
+
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__price-range-input-container">
+                    <label class="visually-hidden" for="catalog__price-range-input-max">Максимальная цена</label>
+                    <label class="visually-hidden" for="catalog__price-range-input-min">Минимальная цена</label>
+                    <input type="number" class="catalog__price-range-input" name="min-price" id="catalog__price-range-input-min" value="0">
+                    <input type="number" class="catalog__price-range-input" name="max-price"
+                    id="catalog__price-range-input-max" value="123">
+                  </div>
+                </fieldset>
+                <fieldset class="catalog__milk">
+                  <h3>Наличие молока</h3>
 
 
-            </fieldset>
-            <fieldset class="catalog__milk">
-              <h3>Наличие молока</h3>
+                </fieldset>
+                <fieldset class="catalog__country">
+                  <h3>Страна произрастания</h3>
 
-            </fieldset>
-            <fieldset class="catalog__country">
-              <h3>Страна произрастания</h3>
+                </fieldset>
+                <button></button>
+                <button></button>
+              </div>
 
-            </fieldset>
-            <button></button>
-            <button></button>
+            </form>
           </div>
-
-        </form>
-
       </section>
     </main>
     <script src="./js/main.js" type="module"  defer></script>

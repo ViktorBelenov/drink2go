@@ -1,0 +1,88 @@
+.catalog {
+  text-align: center;
+  background-color: @lightest-grey;
+}
+
+.catalog__wrapper {
+  margin: 0 20px;
+  padding-top: 50px;
+}
+
+.catalog__price {
+  padding: 0;
+  border: 0;
+  margin-bottom: 30px;
+}
+
+.catalog__settings-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.catalog__price-range-line-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 35px;
+}
+
+.catalog__price-range-line {
+  height: 2px;
+  width: 100%;
+  background-color: @light-grey;
+  position: relative;
+}
+
+.catalog__price-range-line-actual {
+  position: absolute;
+  top: -1px;
+  height: 4px;
+  width: 240px;
+  background-color: @primary-lighter;
+}
+
+.catalog__price-range-button {
+  box-sizing: border-box;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid @primary-lighter;
+  z-index: 1;
+  top: -11px;
+}
+
+.catalog__price-range-button--left {
+  left: 0;
+}
+
+.catalog__price-range-button--right {
+  right: 0;
+}
+
+.catalog__price-range-input-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 2px;
+    background-color: @base-grey;
+    top: 17px;
+    left: 50%;
+  }
+}
+
+.catalog__price-range-input {
+  border: 2px solid @primary-lighter;
+  border-radius: 4px;
+  padding: 8px 10px;
+  text-align: center;
+  box-sizing: border-box;
+  width: 40%;
+}
