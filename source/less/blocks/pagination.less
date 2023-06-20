@@ -60,4 +60,29 @@
     padding: 8px 20px;
     width: auto;
   }
+
+  &:hover {
+    background-color: @primary-lighter;
+    color: @base-white;
+  }
+
+  &:focus {
+    background-color: @primary-lighter;
+    color: @base-white;
+  }
+
+  &:active {
+    background-color: @primary-darker;
+    color: @base-white;
+  }
+
+  &:disabled {
+    background-color: @light-grey;
+    color: @base-white;
+  }
+
+  &--current {
+    background-color: inherit;
+    color: @base-black;
+  }
 }

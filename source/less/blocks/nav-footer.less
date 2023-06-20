@@ -1,0 +1,52 @@
+.nav-footer {
+  display: flex;
+  flex-direction: column;
+
+  padding: 20px;
+
+  @media (min-width: @tablet) {
+    padding-top: 30px;
+  }
+}
+
+.nav-footer__title {
+  margin: 0;
+
+  margin-bottom: 12px;
+
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: @base-primary;
+}
+
+.nav-footer__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-footer__item {
+  margin-bottom: 4px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.nav-footer__link {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+
+  padding: 8px 0;
+
+  display: inline-block;
+
+  text-transform: uppercase;
+}

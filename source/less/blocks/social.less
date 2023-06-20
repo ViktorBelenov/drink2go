@@ -1,0 +1,45 @@
+.social {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social__icon {
+  fill: @base-grey;
+}
+
+.social__item {
+  margin-right: 20px;
+
+  &:last-child {
+    margin-left: 0;
+  }
+}
+
+.social__link {
+  padding: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: @base-secondary;
+  }
+
+  &:focus {
+    background-color: @base-secondary;
+  }
+
+  &:active {
+    background: rgba(120, 89, 207, 0.25);
+  }
+
+  &:hover .social__icon {
+    fill: @base-primary;
+  }
+
+  &:focus .social__icon {
+    fill: @base-primary;
+  }
+}

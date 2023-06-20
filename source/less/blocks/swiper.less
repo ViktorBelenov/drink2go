@@ -9,6 +9,10 @@
   @media (min-width: @tablet) {
     width: 80px;
   }
+
+  &:disabled {
+    opacity: 0.1;
+  }
 }
 
 .swiper__button--next {
@@ -30,6 +34,14 @@
 
   &:active {
     background: linear-gradient(-90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+  }
+
+  &:hover {
+    background: linear-gradient(-90deg, @base-white 0%, rgba(255, 255, 255, 0) 100%);
+  }
+
+  &:focus {
+    background: linear-gradient(-90deg, @base-white 0%, rgba(255, 255, 255, 0) 100%);
   }
 }
 
@@ -54,6 +66,14 @@
   &:active {
     background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
   }
+
+  &:hover {
+    background: linear-gradient(90deg, @base-white 0%, rgba(255, 255, 255, 0) 100%);
+  }
+
+  &:focus {
+    background: linear-gradient(90deg, @base-white 0%, rgba(255, 255, 255, 0) 100%);
+  }
 }
 
 .swiper-pagination {
@@ -70,6 +90,20 @@
   border-radius: 0;
   opacity: 1;
   background: @base-white;
+}
+
+.swiper-pagination-bullet {
+  &:hover {
+    background-color: rgba(120, 89, 207, 0.25);
+  }
+
+  &:focus {
+    background-color: rgba(120, 89, 207, 0.25);
+  }
+
+  &:active {
+    background-color: @base-primary;
+  }
 }
 
 .swiper-pagination .swiper-pagination-bullet-active {

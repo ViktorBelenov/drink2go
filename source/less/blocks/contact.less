@@ -1,0 +1,74 @@
+.contact {
+  padding: 20px;
+
+  @media (min-width: @tablet) {
+    padding-top: 30px;
+  }
+
+  @media (min-width: @tablet) {
+    padding-right: 40px;
+  }
+}
+
+.contact__title {
+  margin: 0;
+
+  margin-bottom: 20px;
+
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: @base-primary;
+}
+
+.contact__address {
+  display: flex;
+  flex-direction: column;
+
+  font-style: normal;
+}
+
+.contact__address-irl {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+
+  margin-bottom: 16px;
+}
+
+.contact__img {
+  padding-left: 20px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 13px;
+    height: 16px;
+  }
+
+  &--tele::after {
+    background-image: url("../../img/icons/stack.svg#tele");
+  }
+
+  &--add::after {
+    background-image: url("../../img/icons/stack.svg#address");
+  }
+}
+
+.contact__link {
+  text-decoration: none;
+  color: @base-black;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
