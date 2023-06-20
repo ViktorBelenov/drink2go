@@ -11,8 +11,8 @@
   <body class="page__body">
     <header class="header">
       <nav class="header-navigation header-navigation--no-js">
-        <a class="header-navigation__logo">
-          <picture>
+        <a class="header-navigation__logo" href="#">
+          <picture class="header-navigation__logo-img">
             <source media="(min-width: 1440px)" srcset="img/logo/desktop-logo.svg">
             <source media="(min-width: 768px)" srcset="img/logo/tablet-logo.svg">
             <img class="header-navigation__logo-img" src="img/logo/mobile-logo.svg" width="32" height="36" alt="Логотип магазина Drink2Go">
@@ -22,16 +22,16 @@
         </a>
         <ul class="header-navigation__list-first">
           <li class ='header-navigation__list-first-item'>
-            <a class="header-navigation__list-first-link">Главная</a>
+            <a class="header-navigation__list-first-link" href="#">Главная</a>
           </li>
           <li class ='header-navigation__list-first-item'>
-            <a class="header-navigation__list-first-link">Каталог</a>
+            <a class="header-navigation__list-first-link header-navigation__list-first-link--current" href="#">Каталог</a>
           </li>
           <li class ='header-navigation__list-first-item'>
-            <a class="header-navigation__list-first-link">Доставка</a>
+            <a class="header-navigation__list-first-link" href="#">Доставка</a>
           </li>
           <li class ='header-navigation__list-first-item'>
-            <a class="header-navigation__list-first-link">О нас</a>
+            <a class="header-navigation__list-first-link" href="#">О нас</a>
           </li>
         </ul>
         <ul class="header-navigation__list-second">
@@ -75,15 +75,15 @@
                 <div class="slide__text-container">
                   <span class="slide__clickbait clickbait">Новинка!</span>
                   <h3 class="slide__header">Декаф Флэт Уайт</h3>
-                  <p class="slide__description"> Свежесваренный кофе без кофеина из Эфиопии
-                    с натуральным фермерским молоком — то, что нужно
+                  <p class="slide__description"> Свежесваренный кофе без кофеина из Эфиопии <br class="br__tablet">
+                    с натуральным фермерским молоком — то, что нужно<br class="br__tablet">
                     для расслабления после тяжёлого рабочего дня
                   </p>
 
                   <p class="slide__price-and-button-container">
                     <span class="price price--not-relevant slide__price-not-relevant">295₽</span>
                     <span class="price slide__price">225₽</span>
-                    <a class="main-button slide__button">Заказать</a>
+                    <a class="main-button slide__button" href="#">Заказать</a>
                   </p>
                 </div>
                 <picture class="slide__img">
@@ -107,7 +107,7 @@
                   <p class="slide__price-and-button-container">
                     <span class="price price--not-relevant slide__price-not-relevant">285₽</span>
                     <span class="price slide__price">265₽</span>
-                    <a class="main-button slide__button">Заказать</a>
+                    <a class="main-button slide__button" href="#">Заказать</a>
                   </p>
                 </div>
                 <picture class="slide__img">
@@ -131,7 +131,7 @@
                   <p class="slide__price-and-button-container">
                     <span class="price price--not-relevant slide__price-not-relevant">395₽</span>
                     <span class="price slide__price">375₽</span>
-                    <a class="main-button slide__button">Заказать</a>
+                    <a class="main-button slide__button" href="#">Заказать</a>
                   </p>
                 </div>
                 <picture class="slide__img">
@@ -160,19 +160,19 @@
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--spead">
             <h3 class="advantages__item-heading">Скорость</h3>
-            <p class="advantages__item-description">Готовый напиток всегда под рукой — просто открой банку</p>
+            <p class="advantages__item-description">Готовый напиток всегда под<br class="br__tablet"> рукой — просто открой банку</p>
           </li>
           <li class="advantages__item advantages__item--facilities">
             <h3 class="advantages__item-heading">Удобство</h3>
-            <p class="advantages__item-description">Легко помещается и в карман, и в маленькую сумочку</p>
+            <p class="advantages__item-description">Легко помещается и в карман,<br class="br__tablet"> и в маленькую сумочку</p>
           </li>
           <li class="advantages__item advantages__item--cheerfulness">
             <h3 class="advantages__item-heading">Бодрость</h3>
-            <p class="advantages__item-description">Сбалансированная доза кофеина даст мощный заряд энергии</p>
+            <p class="advantages__item-description">Сбалансированная доза<br class="br__tablet"> кофеина даст мощный заряд<br class="br__tablet"> энергии</p>
           </li>
           <li class="advantages__item advantages__item--envifriendliness">
             <h3 class="advantages__item-heading">Экологичность</h3>
-            <p class="advantages__item-description">Вся упаковка сделана из перерабатываемых материалов</p>
+            <p class="advantages__item-description">Вся упаковка сделана<br class="br__tablet"> из перерабатываемых<br class="br__tablet"> материалов</p>
           </li>
         </ul>
       </section>
@@ -180,7 +180,7 @@
           <div class="catalog__wrapper">
             <h2 class="catalog__title clickbait">Каталог</h2>
             <h2 class="catalog__second-title">Каталог кофейных напитков</h2>
-            <form class="catalog__form">
+            <form class="catalog__form" action="https://echo.htmlacademy.ru" method="post">
               <div class="catalog__settings-container">
                 <fieldset class="catalog__price">
                   <h3 class="catalog__fieldset-title catalog__fieldset-title-price">Цена</h3>
@@ -271,7 +271,7 @@
                   </ul>
                 </fieldset>
                 <div class="catalog__button-container">
-                  <button class="main-button catalog__button-use">Применить</button>
+                  <button class="main-button catalog__button-use" type="submit">Применить</button>
                   <button class="main-button main-button--invert ">Сбросить</button>
                 </div>
               </div>
@@ -284,7 +284,7 @@
                 </div>
                 <ul class="catalog__cards-list">
                   <li class="card">
-                    <a class="card__img-link">
+                    <a class="card__img-link" href="#">
                     <picture class="card__img">
                       <source type="image/webp" srcset="img/catalog/coffee-can-1.webp 1x, img/catalog/coffee-can-1@2x.webp 2x">
                       <img class="card__img" src="img/catalog/coffee-can-1.png" srcset="img/catalog/coffee-can-1@2x.png 2x" alt="Напиток Декаф Флэт Уайт" width="130" height="180">
@@ -300,14 +300,14 @@
                   </li>
 
                   <li class="card">
-                    <a class="card__img-link">
+                    <a class="card__img-link" href="#">
                     <picture class="card__img">
                       <source type="image/webp" srcset="img/catalog/coffee-can-2.webp 1x, img/catalog/coffee-can-2@2x.webp 2x">
                       <img class="card__img" src="img/catalog/coffee-can-2.png" srcset="img/catalog/coffee-can-2@2x.png 2x" alt="Напиток Декаф Флэт Уайт" width="130" height="180">
                     </picture>
                     </a>
                     <h3 class="card__title">Декаф Флэт Уайт</h3>
-                    <p class="card__describe">Кофе без кофеина из Эфиопии
+                    <p class="card__describe">Кофе без кофеина из Эфиопии<br class="br__tablet">
                       с натуральным фермерским молоком</p>
                     <div class="card__price-cart-container">
                       <span class="price">225₽</span>
@@ -316,14 +316,14 @@
                   </li>
 
                   <li class="card">
-                    <a class="card__img-link">
+                    <a class="card__img-link" href="#">
                     <picture class="card__img">
                       <source type="image/webp" srcset="img/catalog/coffee-can-3.webp 1x, img/catalog/coffee-can-3@2x.webp 2x">
                       <img class="card__img" src="img/catalog/coffee-can-3.png" srcset="img/catalog/coffee-can-3@2x.png 2x" alt="Напиток Декаф Флэт Уайт" width="130" height="180">
                     </picture>
                     </a>
                     <h3 class="card__title">Декаф Флэт Уайт</h3>
-                    <p class="card__describe">Кофе без кофеина из Эфиопии
+                    <p class="card__describe">Кофе без кофеина из Эфиопии<br class="br__tablet">
                       с натуральным фермерским молоком</p>
                     <div class="card__price-cart-container">
                       <span class="price">225₽</span>
@@ -332,14 +332,14 @@
                   </li>
 
                   <li class="card">
-                    <a class="card__img-link">
+                    <a class="card__img-link" href="#">
                     <picture class="card__img">
                       <source type="image/webp" srcset="img/catalog/coffee-can-4.webp 1x, img/catalog/coffee-can-4@2x.webp 2x">
                       <img class="card__img" src="img/catalog/coffee-can-4.png" srcset="img/catalog/coffee-can-4@2x.png 2x" alt="Напиток Декаф Флэт Уайт" width="130" height="180">
                     </picture>
                     </a>
                     <h3 class="card__title">Декаф Флэт Уайт</h3>
-                    <p class="card__describe">Кофе без кофеина из Эфиопии
+                    <p class="card__describe">Кофе без кофеина из Эфиопии<br class="br__tablet">
                       с натуральным фермерским молоком</p>
                     <div class="card__price-cart-container">
                       <span class="price">225₽</span>
@@ -348,14 +348,14 @@
                   </li>
 
                   <li class="card">
-                    <a class="card__img-link">
+                    <a class="card__img-link" href="#">
                     <picture class="card__img">
                       <source type="image/webp" srcset="img/catalog/coffee-can-5.webp 1x, img/catalog/coffee-can-5@2x.webp 2x">
                       <img class="card__img" src="img/catalog/coffee-can-5.png" srcset="img/catalog/coffee-can-5@2x.png 2x" alt="Напиток Декаф Флэт Уайт" width="130" height="180">
                     </picture>
                     </a>
                     <h3 class="card__title">Декаф Флэт Уайт</h3>
-                    <p class="card__describe">Кофе без кофеина из Эфиопии
+                    <p class="card__describe">Кофе без кофеина из Эфиопии<br class="br__tablet">
                       с натуральным фермерским молоком</p>
                     <div class="card__price-cart-container">
                       <span class="price">225₽</span>
@@ -364,14 +364,14 @@
                   </li>
 
                   <li class="card">
-                    <a class="card__img-link">
+                    <a class="card__img-link" href="#">
                     <picture class="card__img">
                       <source type="image/webp" srcset="img/catalog/coffee-can-6.webp 1x, img/catalog/coffee-can-6@2x.webp 2x">
                       <img class="card__img" src="img/catalog/coffee-can-6.png" srcset="img/catalog/coffee-can-6@2x.png 2x" alt="Напиток Декаф Флэт Уайт" width="130" height="180">
                     </picture>
                     </a>
                     <h3 class="card__title">Декаф Флэт Уайт</h3>
-                    <p class="card__describe">Кофе без кофеина из Эфиопии
+                    <p class="card__describe">Кофе без кофеина из Эфиопии<br class="br__tablet">
                       с натуральным фермерским молоком</p>
                     <div class="card__price-cart-container">
                       <span class="price">225₽</span>
@@ -382,7 +382,7 @@
                 <div class="catalog__pagination pagination">
                   <ul class="pagination__list">
                     <li class="pagination__item">
-                      <a class="pagination__link pagination__link--left">
+                      <a class="pagination__link pagination__link--left" href="#">
                         <svg class="pagination__icon" width="10" height="6">
                           <use xlink:href="img/icons/stack.svg#left-pagination"></use>
                         </svg>
@@ -390,16 +390,16 @@
                       </a>
                     </li>
                     <li class="pagination__item">
-                      <a class="pagination__link pagination__link--current">1</a>
+                      <a class="pagination__link pagination__link--current" href="#">1</a>
                     </li>
                     <li class="pagination__item">
-                      <a class="pagination__link">2</a>
+                      <a class="pagination__link" href="#">2</a>
                     </li>
                     <li class="pagination__item">
-                      <a class="pagination__link">3</a>
+                      <a class="pagination__link" href="#">3</a>
                     </li>
                     <li class="pagination__item">
-                      <a class="pagination__link pagination__link--right">
+                      <a class="pagination__link pagination__link--right" href="#">
                         <svg class="pagination__icon" width="10" height="6">
                           <use xlink:href="img/icons/stack.svg#right-pagination"></use>
                         </svg>
@@ -416,24 +416,21 @@
 
       </section>
     </main>
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script src="./js/main.js" type="module"  defer></script>
-  </body>
   <footer class="footer">
     <div class="footer__wrapper">
       <nav class="footer__nav-first">
-        <a class="footer__logo">
+        <a class="footer__logo" href="#">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logo/desktop-logo.svg">
             <source media="(min-width: 768px)" srcset="img/logo/desktop-logo.svg">
-            <img class="footer_logo-img" src="img/logo/tablet-logo.svg" width="82" height="36" alt="Логотип магазина Drink2Go">
+            <img class="footer__logo-img" src="img/logo/tablet-logo.svg" width="82" height="36" alt="Логотип магазина Drink2Go">
           </picture>
           <span class='footer__logo-caption'>Интернет-магазин
             кофейных напитков</span>
         </a>
         <ul class="footer__social social">
           <li class="social__item">
-            <a class="social__link">
+            <a class="social__link" href="#">
               <svg class="social__icon" width="20" height="20">
                 <use xlink:href="img/icons/stack.svg#vk"></use>
               </svg>
@@ -441,7 +438,7 @@
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link">
+            <a class="social__link" href="#">
               <svg class="social__icon" width="20" height="20">
                 <use xlink:href="img/icons/stack.svg#pinterest"></use>
               </svg>
@@ -449,7 +446,7 @@
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link">
+            <a class="social__link" href="#">
               <svg class="social__icon" width="20" height="20">
                 <use xlink:href="img/icons/stack.svg#ok"></use>
               </svg>
@@ -462,16 +459,16 @@
         <h2 class="nav-footer__title">Интернет-магазин</h2>
         <ul class="nav-footer__list">
           <li class="nav-footer__item">
-            <a class="nav-footer__link">Каталог</a>
+            <a class="nav-footer__link" href="#">Каталог</a>
           </li>
           <li class="nav-footer__item">
-            <a class="nav-footer__link">Доставка</a>
+            <a class="nav-footer__link" href="#">Доставка</a>
           </li>
           <li class="nav-footer__item">
-            <a class="nav-footer__link">Способы оплаты</a>
+            <a class="nav-footer__link" href="#">Способы оплаты</a>
           </li>
           <li class="nav-footer__item">
-            <a class="nav-footer__link">О нас</a>
+            <a class="nav-footer__link" href="#">О нас</a>
           </li>
         </ul>
       </nav>
@@ -479,13 +476,13 @@
         <h2 class="nav-footer__title">Медиа</h2>
         <ul class="nav-footer__list">
           <li class="nav-footer__item">
-            <a class="nav-footer__link">Блог</a>
+            <a class="nav-footer__link" href="#">Блог</a>
           </li>
           <li class="nav-footer__item">
-            <a class="nav-footer__link">Информация для СМИ</a>
+            <a class="nav-footer__link" href="#">Информация для СМИ</a>
           </li>
           <li class="nav-footer__item">
-            <a class="nav-footer__link">Правовая информация</a>
+            <a class="nav-footer__link" href="#">Правовая информация</a>
           </li>
         </ul>
       </nav>
@@ -510,4 +507,7 @@
       </div>
     </div>
   </footer>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="./js/main.js" type="module"  defer></script>
+  </body>
 </html>

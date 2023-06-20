@@ -146,6 +146,22 @@
   border: 2px solid @primary-lighter;
   z-index: 1;
   top: -11px;
+
+  &:hover {
+    background: rgba(120, 89, 207, 0.25);
+  }
+
+  &:focus {
+    background: rgba(120, 89, 207, 0.25);
+  }
+
+  &:active {
+    background: @base-primary;
+  }
+
+  &:disabled {
+    border: 2px solid @base-grey;
+  }
 }
 
 .catalog__price-range-button--left {

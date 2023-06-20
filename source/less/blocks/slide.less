@@ -14,6 +14,8 @@
 
   @media (min-width: @desktop) {
     padding-top: 30px;
+    padding-left: 105px;
+    padding-right: 105px;
     flex-direction: row;
     text-align: start;
   }
@@ -76,7 +78,7 @@
 .slide__img {
   order: 1;
 
-  margin-bottom: 10px;
+  margin-bottom: 3px;
 
   @media (min-width: @tablet) {
     order: 2;
@@ -96,7 +98,10 @@
   margin: 0;
   display: flex;
   align-items: center;
-  justify-content: center;
+
+  @media (min-width: @tablet) {
+    justify-content: center;
+  }
 }
 
 .slide__price-not-relevant {

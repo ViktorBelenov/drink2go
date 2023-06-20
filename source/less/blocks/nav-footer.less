@@ -44,9 +44,23 @@
   font-size: 12px;
   line-height: 16px;
 
+  color: @base-black;
+
   padding: 8px 0;
 
   display: inline-block;
 
   text-transform: uppercase;
+
+  &:hover {
+    color: @primary-lighter;
+  }
+
+  &:focus {
+    color: @primary-lighter;
+  }
+
+  &:active {
+    color: @primary-darker;
+  }
 }

@@ -34,11 +34,13 @@
   align-items: center;
 
   @media (min-width: @desktop) {
-    min-width: 330px;
+    min-width: 440px;
   }
 }
 
 .header-navigation__logo-img {
+  display: block;
+
   @media (min-width: @tablet) {
     width: 82px;
     height: 36px;
@@ -56,11 +58,13 @@
     display: block;
     margin-left: 20px;
 
+
     font-family: "Montserrat", "Arial", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
+    color: @base-black;
   }
 }
 
@@ -91,11 +95,13 @@
   }
 }
 
-.header-navigation__list-first-item {
+.header-navigation__list-first-link {
   padding: 20px 0;
   display: block;
   position: relative;
   background-color: @base-white;
+
+  color: @base-black;
 
 
   @media (min-width: @tablet) {
@@ -127,14 +133,31 @@
       left: -100px;
     }
   }
-}
 
-.header-navigation__list-first-link {
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
+
+  text-transform: uppercase;
+
+  &--current {
+    color: @base-primary;
+    border-bottom: 2px solid @base-primary;
+  }
+
+  &:hover {
+    color: @base-primary;
+  }
+
+  &:focus {
+    color: @base-primary;
+  }
+
+  &:active {
+    background-color: @base-secondary;
+  }
 }
 
 .header-navigation__list-second {
@@ -154,6 +177,36 @@
 
   text-decoration: none;
   color: inherit;
+
+  @media (min-width: @desktop) {
+    padding: 32px 22px;
+    padding-bottom: 33px;
+  }
+
+  &:hover {
+    color: @base-primary;
+  }
+
+  &:focus {
+    color: @base-primary;
+  }
+
+  &:active {
+    color: @base-primary;
+    background-color: @base-secondary;
+  }
+
+  &:hover .header-navigation__list-second-link-picture {
+    fill: @base-primary;
+  }
+
+  &:focus .header-navigation__list-second-link-picture {
+    fill: @base-primary;
+  }
+
+  &:active .header-navigation__list-second-link-picture {
+    fill: @base-primary;
+  }
 }
 
 .header-navigation__list-second-link-text {
@@ -175,6 +228,10 @@
   background-color: transparent;
   border: 0;
   padding: 22px;
+
+  &:active {
+    background-color: @base-secondary;
+  }
 
   @media (min-width: @tablet) {
     display: none;

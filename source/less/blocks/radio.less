@@ -29,6 +29,26 @@
   border: 2px solid @base-primary;
 }
 
+.radio__label:focus .radio__control-mark {
+  border: 2px solid @base-primary;
+}
+
+.radio-label:hover .radio__control-mark::before {
+  content: " ";
+  background: rgba(120, 89, 207, 0.25);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+
+.radio-label:focus .radio__control-mark::before {
+  content: " ";
+  background: rgba(120, 89, 207, 0.25);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+
 .radio__control-input:checked + .radio__control-mark {
   border: 2px solid @base-primary;
 }
